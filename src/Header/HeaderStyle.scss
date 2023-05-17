@@ -1,0 +1,49 @@
+@use "../SCSS/global.scss" as *;
+@use "../SCSS/mixin" as *;
+
+.headerContainer {
+  @include headerContainer();
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  li {
+    @include flex-display;
+    gap: 2rem;
+    margin-left: 61px;
+    height: 38px;
+    left: 61px;
+    a {
+      color: $colorWhite;
+      width: 165px;
+      height: 38px;
+      left: 61px;
+      top: 29px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 38px;
+
+      &:focus{
+        @include flex-display-container;
+        justify-content: center;
+        align-items: center;
+        background-color: $colorWhite;
+        color: $headerColor;
+        width: 190px;
+        height: 54px;
+        font-size: 25px;
+        line-height: 38px;
+        left: 265px;
+        top: 20px;
+        border-radius: 10px 10px 0px 0px;
+        transition: 0.2s;
+        a {
+          color: $headerColor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@use "../../SCSS/global.scss" as *;
+@use "../../SCSS/mixin" as *;
+
+
+.TaskContainer {
+    @include flex-display-container;
+}
+
+.TaskList{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50vh;
+}
+
+h1{
+width: 1311px;
+height: 60px;
+left: 64px;
+top: 219px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 60px;
+}
+
+
+
+
+    
+    table {
+    border-collapse: collapse;
+    margin: auto;
+    }
+    td input{
+        background: none;
+        border: none;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        color: white;
+        width: 30rem;
+        
+
+    }
+
+    th {
+    padding: 10px;
+    text-align: center;
+    width: 80vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: white;
+    width: 30rem;
+
+    }
+    
+    th{
+    font-weight: bold;
+    }
+    
+    tr:hover:nth-child(1n + 2) {
+    color: $colorWhite
+    }
+    
+
+    .buttonList{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+     
+        button{ 
+            background: none;
+            border: none;
+          
+            cursor: pointer;
+        
+        }
+    }
+
+    .buttonAddList{
+        display: flex;
+        justify-content: end;
+        width: 6rem;
+        button{ 
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+

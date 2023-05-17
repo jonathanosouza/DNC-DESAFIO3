@@ -1,0 +1,24 @@
+@use '../SCSS/global.scss' as *;
+
+
+@mixin flex-display {
+    display: flex;
+}
+
+
+@mixin flex-display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin headerContainer($background: $headerColor,$color: $colorWhite){   
+    width: 100%;
+    height: 74px;
+    left: 0px;
+    top: 0px;
+    background-color:$background;
+    color: $color
+
+}
