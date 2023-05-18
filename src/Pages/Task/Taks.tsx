@@ -160,15 +160,15 @@ export function Taks({ datas }) {
                     <h1>Otimize seu tempo e se organize com o nosso Planejador Diário.</h1>
                 </div>
                 <div className="TaskList">
-                    <table>
-                        <tr>
+                    <table className="tableList">
+                        <tr className="titleList">
                             <th>Tarefas</th>
                             <th>Status</th>
                             <th>Opções</th>
                         </tr>
                         {db.map((data) => {
                             return ( <>
-                                <tr key={data.id} iseditOpen={iseditOpen}>
+                                <tr className="taksListItem" key={data.id} iseditOpen={iseditOpen}>
                                     <td key={data.id}>
                                         <input
                                             type="text"
